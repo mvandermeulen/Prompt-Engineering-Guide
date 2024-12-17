@@ -29,6 +29,8 @@ const config: DocsThemeConfig = {
     { locale: `ca`, text: `Català` },
     { locale: 'fi', text: 'Finnish' },
     { locale: 'ru', text: 'Русский' },
+    { locale: 'de', text: 'Deutsch' },
+    { locale: 'ar', text: 'العربية' },
   ],
   head: function UseHead() {
     const { title } = useConfig()
@@ -60,7 +62,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/dair-ai/Prompt-Engineering-Guide/tree/main/',
   footer: {
-    text: 'Copyright © 2023 DAIR.AI',
+    text: 'Copyright © 2024 DAIR.AI',
   },
   search: {
     placeholder: 'Search...',

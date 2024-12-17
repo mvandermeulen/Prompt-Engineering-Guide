@@ -1,5 +1,6 @@
 # Chain-of-Thought Prompting
 
+import { Callout } from 'nextra/components'
 import {Screenshot} from 'components/screenshot'
 import COT from '../../img/cot.png'
 import ZEROCOT from '../../img/zero-cot.png'
@@ -55,6 +56,12 @@ Adding all the odd numbers (15, 5, 13, 7, 1) gives 41. The answer is False.
 
 Keep in mind that the authors claim that this is an emergent ability that arises with sufficiently large language models.
 
+<Callout type= "info" emoji="🎓">
+Learn more about chain-of-thought prompting and advanced prompting methods in our new AI courses. [Join now!](https://dair-ai.thinkific.com/)
+
+Use code BLACKFRIDAY to get an extra 35% off. This offer ends on 29th November 2024.
+</Callout>
+
 ## Zero-shot COT Prompting
 
 <Screenshot src={ZEROCOT} alt="Zero-shot COT" />
@@ -94,7 +101,7 @@ It's impressive that this simple prompt is effective at this task. This is parti
 
 ## Automatic Chain-of-Thought (Auto-CoT)
 
-When applying chain-of-thought prompting with demonstrations, the process involves hand-crafting effective and diverse examples. This manual effort could lead to suboptimal solutions. [Zhang et al. (2022)](https://arxiv.org/abs/2210.03493) propose an approach to eliminate manual efforts by leveraging LLMs with "Let's think step by step" prompt to generate reasoning chains for demonstrations one by one. This automatic process can still end up with mistakes in generated chains. To mitigate the effects of the mistakes, the diversity of demonstrations matter. This works proposes Auto-CoT, which samples questions with diversity and generates reasoning chains to construct the demonstrations. 
+When applying chain-of-thought prompting with demonstrations, the process involves hand-crafting effective and diverse examples. This manual effort could lead to suboptimal solutions. [Zhang et al. (2022)](https://arxiv.org/abs/2210.03493) propose an approach to eliminate manual efforts by leveraging LLMs with "Let's think step by step" prompt to generate reasoning chains for demonstrations one by one. This automatic process can still end up with mistakes in generated chains. To mitigate the effects of the mistakes, the diversity of demonstrations matter. This work proposes Auto-CoT, which samples questions with diversity and generates reasoning chains to construct the demonstrations. 
 
 Auto-CoT consists of two main stages:
 

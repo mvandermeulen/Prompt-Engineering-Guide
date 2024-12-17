@@ -1,7 +1,15 @@
 # General Tips for Designing Prompts
 
-Here are some tips to keep in mind while you are designing your prompts:
+import {Bleed} from 'nextra-theme-docs'
+import {Callout} from 'nextra-theme-docs'
 
+<iframe width="100%"
+  height="415px"
+  src="https://www.youtube.com/embed/7M6CSCIMJ3k?si=BgaVt9g1vS4BQzXZ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  />
+
+Here are some tips to keep in mind while you are designing your prompts:
 
 ### Start Simple
 As you get started with designing prompts, you should keep in mind that it is really an iterative process that requires a lot of experimentation to get optimal results. Using a simple playground from OpenAI or Cohere is a good starting point.
@@ -44,9 +52,9 @@ As an example, let's try a simple prompt to extract specific information from a 
 Extract the name of places in the following text. 
 
 Desired format:
-Place: <comma_separated_list_of_company_names>
+Place: <comma_separated_list_of_places>
 
-Input: "Although these developments are encouraging to researchers, much is still a mystery. “We often have a black box between the brain and the effect we see in the periphery,” says Henrique Veiga-Fernandes, a neuroimmunologist at the Champalimaud Centre for the Unknown in Lisbon. “If we want to use it in the therapeutic context, we actually need to understand the mechanism.""
+Input: "Although these developments are encouraging to researchers, much is still a mystery. “We often have a black box between the brain and the effect we see in the periphery,” says Henrique Veiga-Fernandes, a neuroimmunologist at the Champalimaud Centre for the Unknown in Lisbon. “If we want to use it in the therapeutic context, we actually need to understand the mechanism.“"
 ```
 
 *Output:*
@@ -55,6 +63,12 @@ Place: Champalimaud Centre for the Unknown, Lisbon
 ```
 
 Input text is obtained from [this Nature article](https://www.nature.com/articles/d41586-023-00509-z).
+
+<Callout type= "info" emoji="🎓">
+Learn more about prompting techniques and examples in our new AI courses. [Join now!](https://dair-ai.thinkific.com/)
+
+Use code BLACKFRIDAY to get an extra 35% off. This offer ends on 29th November 2024.
+</Callout>
 
 ### Avoid Impreciseness
 
